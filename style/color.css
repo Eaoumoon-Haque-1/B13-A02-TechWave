@@ -66,20 +66,17 @@ nav{
 }
 nav h1{
     height: 2rem;
-    width: 13.625%;
+    max-width: 218px;
     font-size: 2rem;
     font-weight: bolder;
 }
 nav ul{
-    /* border: 2px solid salmon; */
-    width: 13.625%;
+    max-width: 218px;
     display: flex;
     gap: 32px;
-    /* justify-content: space-between; */
 }
 nav li{
     list-style: none;
-    
 }
 nav a{
     text-decoration: none;
@@ -87,7 +84,6 @@ nav a{
     font-size: 1rem;
     font-weight: 500;
     color: white;
-
 }
 
 /* Hero section design */
@@ -95,8 +91,10 @@ nav a{
     width: 100%;
     max-width: 1600px;
     min-height: calc(100vh - 92px);
-    background: url("/assets/hero-bg.png") center/cover no-repeat,
-                rgba(42, 24, 108, 1);
+    background: url("../assets/hero-bg.png"), rgba(42, 24, 108, 1);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
