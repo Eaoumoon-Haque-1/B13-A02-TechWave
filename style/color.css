@@ -26,9 +26,17 @@ body{
     rgba(145, 0, 248, 1)
   );
 }
-
+.heading-primary{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
 .white{
     color: white;
+}
+
+.green{
+    color: rgba(0, 255, 136, 1);
 }
 
 .btn-primary{
@@ -86,6 +94,9 @@ nav a{
     color: white;
 }
 
+.menu-hidden{
+    display: none;
+}
 /* Hero section design */
  #hero-section{
     width: 100%;
@@ -98,15 +109,16 @@ nav a{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* overflow: hidden; */
 }
 
 .hero-container{
     max-width: 550px;
     text-align: center;
+    width: 90%;
 }
 
 .img-container{
+    width: 100%;
     max-width: 350px;
     margin: 0 auto 24px;
     position: relative;
@@ -116,10 +128,13 @@ nav a{
     position: absolute;
     top: 22%;
     left: 35%;
+    width: 30%;
+    height: auto;
 }
 
 .img-container .lower-img{
     margin: 0 auto;
+    width: 100%;
 }
 
 .btn-container{
@@ -128,7 +143,7 @@ nav a{
     justify-content: center;
 }
 .hero-container h1{
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 800;
     color: white;
     margin-bottom: 8px;
@@ -150,5 +165,203 @@ nav a{
 }
 #message-btn p{
     color: rgba(0, 255, 136, 1);
+}
+
+/* about section related */
+.about{
+    max-width: 1200px;
+    margin: 50px auto 120px;
+    text-align: center;
+}
+.about >p{
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.8;
+    color: white;
+    text-align: center;
+    margin-bottom: 160px;
+}
+.stat-container{
+    max-width: 1200px;
+    max-height: 94px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+}
+.stat-container h1{
+    max-width: 240px;
+    max-height: 58px;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+.stat-container p{
+    max-width: 240px;
+    max-height: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.8;
+    color: white;
+    text-align: center;
+}
+/* choosing reasons */
+.reason-container{
+    max-width: 1600px;
+    padding: 120px 0;
+    background: rgba(35, 14, 61, 1);
+}
+.choosing-reasons, .episode{
+    text-align:center;
+    max-width: 1200px;
+    margin: 120px auto;
+}
+.choosing-reasons h1{
+    margin: 0 auto;
+}
+.choosing-reasons h3{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.choosing-reasons p{
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.6;
+    text-align: left;
+}
+.choosing-reasons img{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 16px;
+}
+.audio{
+    text-align: left;
+    grid-area: audio;
+    padding: 107px 40px;
+    border-radius: 40px;
+    background: rgba(53, 17, 101, 0.4);
+}
+.similar{
+    text-align: left;
+    padding: 40px;
+    border-radius: 40px;
+    background: rgba(53, 17, 101, 0.4);
+}
+#mobile{
+    grid-area: mobile;
+}
+#global{
+    grid-area: global;
+}
+#interview{
+    grid-area: interview;
+}
+#resources{
+    grid-area: resources;
+}
+.grid-container{
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+    "audio      mobile      mobile"
+    "audio      global      global"
+    "interview  interview   resources"
+}
+/* vides page related */
+
+.videos-container{
+    display: flex;
+    gap: 30px;
+}
+.video-container{
+    border-radius: 24px;
+    overflow: hidden;
+    background: rgba(37, 13, 68, 1);
+}
+
+.desc-container{
+    text-align: left;
+    margin: 24px;
+}
+.desc-container h3{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.time-container{
+    display: flex;
+    gap: 6px;
+}
+.time-container img{
+    width: 20px;
+    height: 20px;
+}
+ .desc-container p{
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.6;
+    margin-bottom: 12px;
+ }
+/* responsive mobile device */
+@media screen and (max-width:576px) {
+    /* .hidden-class{
+        display: none;
+    }
+    .menu-hidden{
+        display: block;
+    }
+    nav>h1{
+        margin-left: 5%;
+    }
+    nav>img{
+        margin-right: 5%;
+    }
+    .img-container{
+        width: 200px;
+        height: 200px;
+        border: 2px solid red;
+    } */
+    .stat-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .about{
+        margin: 40px 20px;
+        text-align: center;
+    }
+    .heading-primary{
+        font-size: 2rem;
+    }
+    .about{
+    margin: 40px 20px;
+}
+    .about >p{
+        margin-bottom: 80px;
+    }
+    .grid-container{
+        margin: 0 20px;
+        display: grid;
+        gap: 16px;
+        grid-template-areas: 
+        "audio"           
+        "mobile"
+        "global"
+        "interview"  
+        "resources"
+    }
+    .reason-container{
+        padding: 40px 0;
+    }
+    .choosing-reasons,
+    .episode{
+        margin: 40px auto;
+    }
+    .videos-container{
+        flex-direction: column;
+        gap: 16px;
+        margin: 0 20px;
+    }
 }
 

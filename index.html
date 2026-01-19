@@ -10,21 +10,22 @@
     <link rel="stylesheet" href="./style/color.css">
 </head>
 <body class="inter-font">
-    <header>
-        <nav>
+    <header style="display: none;">
+        <nav class="nav-bar">
             <h1 class="white">Tech<span class="">Wave</span></h1>
-            <ul>
+            <ul class="hidden-class">
                 <li><a href="">About</a></li>
                 <li><a href="">Episodes</a></li>
                 <li><a href="">Host</a></li>
             </ul>
-            <button class="btn-primary gradient-box">
+            <button class="btn-primary gradient-box hidden-class">
                 <p>Subscribe</p>
                 <img src="./assets/ArrowRight.png" alt="Arrow image">
             </button>
+            <img class="menu-hidden" src="./assets/hamburger-menu.png" alt="">
         </nav>
         <!-- Nav section end -->
-        <section id="hero-section">
+        <section id="hero-section" class="banner">
             <section class="hero-container">
                 <div class="img-container">
                         <img class="lower-img" src="./assets/hero-circle.png" alt="circle image">
@@ -46,5 +47,111 @@
             </section>
         </section>
     </header>
+
+    <main>
+        <!-- about the podcast start -->
+         <section class="about">
+            <h1 class="white heading-primary">About the Podcast</h1>
+            <p>TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. <br>
+                We break down complex topics into digestible insights, explore productivity strategies that actually work, <br>
+                and share stories of personal growth from industry leaders. <br><br><br>
+
+                Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+            
+             <div class="stat-container">
+            <div class="stat-1">
+                <h1 class="green">150K+</h1>
+                <p>Monthly Listeners</p>
+            </div>
+            <div class="stat-2">
+                <h1 class="green">200+</h1>
+                <p>Episodes Published</p>
+            </div>
+            <div class="stat-3">
+                <h1 class="green">4.9★</h1>
+                <p>Average Rating</p>
+            </div>
+            <div class="stat-4">
+                <h1 class="green">50+</h1>
+                <p>Industry Experts</p>
+            </div>
+         </div>
+         </section>
+        <!-- about end -->
+        <!-- choosing reasons page -->
+        <section class="reason-container">
+            <section class="choosing-reasons">
+            <h1 class="white heading-primary" style="margin-bottom: 40px;">Why Choose TechWave</h1>
+            <div class="grid-container">
+                    <div class="audio">
+                        <img src="./assets/headphone.png" alt="headphone">
+                        <h3 class="white">Premium Audio Quality</h3>
+                        <p class="white">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+                    </div>
+                    <div class="similar" id="mobile">
+                        <img src="./assets/device.png" alt="">
+                        <h3 class="white">Mobile Friendly</h3>
+                        <p class="white">Listen on the go with seamless mobile experience and offline downloads.</p>
+                    </div>
+                    <div class="similar" id="global">
+                        <img src="./assets/location.png" alt="">
+                        <h3 class="white">Global Community</h3>
+                        <p class="white">Connect with tech enthusiasts from over 120 countries worldwide.</p>
+                    </div>
+                    <div class="similar" id="interview">
+                        <img src="./assets/zap-fast.png" alt="">
+                        <h3 class="white">Exclusive Interviews</h3>
+                        <p class="white">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
+                    </div>
+                    <div class="similar" id="resources">
+                        <img src="./assets/resource.png" alt="">
+                        <h3 class="white">Rich Resources</h3>
+                        <p class="white">Access show notes, transcripts, and additional learning materials for every episode.</p>
+                    </div>
+            </div>
+        </section>
+        </section>
+        <!-- choosing reasons page end -->
+        <!-- feature episodes start -->
+        <section class="episode">
+            <h1 class="white heading-primary" style="margin-bottom: 40px;">Featured Episodes</h1>
+            <div class="videos-container">
+                <div class="video-container">
+                    <iframe width="380" height="214" src="https://www.youtube.com/embed/CRraHg4Ks_g?si=YcIsuUv__4gFOpKv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="desc-container">
+                        <h3 class="white">The Future of AI in Everyday Life</h3>
+                        <p class="white">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+                        <div class="time-container">
+                            <img src="./assets/clock.png" alt="">
+                            <p class="green">20min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-container">
+                    <iframe width="380" height="214" src="https://www.youtube.com/embed/NgoJjIFULDE?si=nuO0bwsHiv3m6TO3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="desc-container">
+                        <h3 class="white">Building Better Habits for Remote Work</h3>
+                        <p class="white">Practical strategies for staying productive and maintaining work-life balance in a remote environment.</p>
+                        <div class="time-container">
+                            <img src="./assets/clock.png" alt="">
+                            <p class="green">13min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-container">
+                    <iframe width="380" height="214" src="https://www.youtube.com/embed/XmWkcePhf84?si=lWs0G_qpNuzbfMIS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="desc-container">
+                        <h3 class="white">Career Growth in Tech: A Roadmap</h3>
+                        <p class="white">Expert advice on navigating your tech career from junior developer to senior leadership roles.</p>
+                        <div class="time-container">
+                            <img src="./assets/clock.png" alt="">
+                            <p class="green">37min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- feature episodes end -->
+    </main>
 </body>
 </html>
