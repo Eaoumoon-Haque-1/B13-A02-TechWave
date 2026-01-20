@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechWave Banner</title>
+<style>
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #1b0e3b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .banner {
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .banner h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff00c8, #8e2eff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.3s;
+  }
+
+  .social-icons a:hover {
+    transform: scale(1.2);
+  }
+
+  .wave {
+    width: 100%;
+    max-width: 600px;
+    height: 50px;
+    margin: 20px auto 0;
+  }
+
+  .copyright {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin-top: 15px;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .banner h1 {
+      font-size: 2rem;
+    }
+
+    .social-icons a {
+      font-size: 1.2rem;
+    }
+
+    .wave {
+      height: 30px;
+    }
+  }
+</style>
+<!-- Include Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="banner">
+  <h1>Tech<span style="color: #ff00c8;">Wave</span></h1>
+
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-spotify"></i></a>
+    <a href="#"><i class="fab fa-apple"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+  </div>
+
+  <svg class="wave" viewBox="0 0 1440 320">
+    <path fill="white" fill-opacity="0.1" d="M0,160L30,165.3C60,171,120,181,180,170.7C240,160,300,128,360,138.7C420,149,480,203,540,213.3C600,224,660,192,720,165.3C780,139,840,117,900,122.7C960,128,1020,160,1080,165.3C1140,171,1200,149,1260,144C1320,139,1380,149,1410,154.7L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+  </svg>
+
+  <div class="copyright">
+    © 2026 TechWave Podcast. All rights reserved.
+  </div>
+</div>
+
+</body>
+</html>
